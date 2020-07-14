@@ -28,6 +28,13 @@
 ##########
 # V9-based configs:
 
+ifeq ("$(CONFIG)","OvK")
+    ifeq ("$(BOARD)","NONE")
+        BOARD=ovk
+    endif
+    SETTINGS_FILE="settings_ovk.h"
+endif
+
 ifeq ("$(CONFIG)","ShapeokoDualY")
     ifeq ("$(BOARD)","NONE")
         BOARD=g2v9k
