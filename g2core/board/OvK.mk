@@ -13,23 +13,23 @@
 ##########
 # BOARDs for use directly from the make command line (with default settings) or by the CONFIGS above.
 
-ifeq ("$(BOARD)","g2v9i")
-    BASE_BOARD=g2v9
-    DEVICE_DEFINES += MOTATE_BOARD="G2v9i"
+ifeq ("$(BOARD)","OvKa")
+    BASE_BOARD=ovk
+    DEVICE_DEFINES += MOTATE_BOARD="OvKa"
     DEVICE_DEFINES += SETTINGS_FILE=${SETTINGS_FILE}
 endif
 
-ifeq ("$(BOARD)","g2v9k")
-    BASE_BOARD=g2v9
-    DEVICE_DEFINES += MOTATE_BOARD="G2v9k"
-    DEVICE_DEFINES += SETTINGS_FILE=${SETTINGS_FILE}
-endif
+#ifeq ("$(BOARD)","g2v9k")
+#    BASE_BOARD=g2v9
+#    DEVICE_DEFINES += MOTATE_BOARD="G2v9k"
+#    DEVICE_DEFINES += SETTINGS_FILE=${SETTINGS_FILE}
+#endif
 
 
 ##########
-# The general g2v9 BASE_BOARD.
+# The general ovk BASE_BOARD.
 
-ifeq ("$(BASE_BOARD)","g2v9")
+ifeq ("$(BASE_BOARD)","ovk")
     _BOARD_FOUND = 1
 
     FIRST_LINK_SOURCES += $(sort $(wildcard ${MOTATE_PATH}/Atmel_sam_common/*.cpp)) $(sort $(wildcard ${MOTATE_PATH}/Atmel_sam3x/*.cpp))
@@ -39,7 +39,7 @@ ifeq ("$(BASE_BOARD)","g2v9")
     export CHIP
     CHIP_LOWERCASE = sam3x8c
 
-    BOARD_PATH = ./board/G2v9
+    BOARD_PATH = ./board/OvK
     SOURCE_DIRS += ${BOARD_PATH} device/step_dir_driver
 
     PLATFORM_BASE = ${MOTATE_PATH}/platform/atmel_sam
