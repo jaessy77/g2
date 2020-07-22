@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/synthetos/g2.svg?branch=master)](https://travis-ci.org/synthetos/g2) [![Issues in Ready](https://badge.waffle.io/synthetos/g2.svg?label=ready&title=Ready)](http://waffle.io/synthetos/g2) [![Issues in Progress](https://badge.waffle.io/synthetos/g2.svg?label=in%20progress&title=In%20Progress)](http://waffle.io/synthetos/g2)
 
+# What differs this fork from others
+
+Development of a new daughter board (shield) for the Arduino Due
+
 # g2core - Master Branch
 
 g2core [master](https://github.com/synthetos/g2/tree/master) is the stable branch. New features are developed in feature branches and merged into the edge branch, and after thorough testing are merged here to master.
