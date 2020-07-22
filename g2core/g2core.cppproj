@@ -1646,34 +1646,34 @@
     <Compile Include="board\gquintic\motate_pin_assignments.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="board\OvK\board_stepper.cpp">
+    <Compile Include="board\OvK_Shield\board_stepper.cpp">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="board\OvK\board_stepper.h">
+    <Compile Include="board\OvK_Shield\board_stepper.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="board\OvK\board_xio.cpp">
+    <Compile Include="board\OvK_Shield\board_xio.cpp">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="board\OvK\board_xio.h">
+    <Compile Include="board\OvK_Shield\board_xio.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="board\OvK\gShield-pinout.h">
+    <Compile Include="board\OvK_Shield\gShield-pinout.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="board\OvK\hardware.cpp">
+    <Compile Include="board\OvK_Shield\hardware.cpp">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="board\OvK\hardware.h">
+    <Compile Include="board\OvK_Shield\hardware.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="board\OvK\motate_pin_assignments.h">
+    <Compile Include="board\OvK_Shield\motate_pin_assignments.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="board\OvK\OvK_Shield-pinout.h">
+    <Compile Include="board\OvK_Shield\OvK_Shield-pinout.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="board\OvK\shopbotShield-pinout.h">
+    <Compile Include="board\OvK_Shield\shopbotShield-pinout.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="board\printrboardg2\board_stepper.cpp">
@@ -1752,6 +1752,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="settings\settings_makeblock.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="settings\settings_ovk_testplatform.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="settings\settings_printrbot_play.h">
@@ -1963,7 +1966,7 @@
     <Folder Include="board\g2v9" />
     <Folder Include="board\gquintic\" />
     <Folder Include="board\gquadratic" />
-    <Folder Include="board\OvK" />
+    <Folder Include="board\OvK_Shield" />
     <Folder Include="board\printrboardg2\" />
     <Folder Include="board\sbv300\" />
     <Folder Include="device\" />

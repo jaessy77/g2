@@ -28,13 +28,6 @@
 ##########
 # V9-based configs:
 
-ifeq ("$(CONFIG)","OvK")
-    ifeq ("$(BOARD)","NONE")
-        BOARD=ovk
-    endif
-    SETTINGS_FILE="settings_ovk.h"
-endif
-
 ifeq ("$(CONFIG)","ShapeokoDualY")
     ifeq ("$(BOARD)","NONE")
         BOARD=g2v9k
@@ -162,6 +155,15 @@ ifeq ("$(CONFIG)","EggBot")
     SETTINGS_FILE="settings_eggbot.h"
 endif
 
+##########
+# OvK configs:
+
+ifeq ("$(CONFIG)","OvK_Testplatform")
+    ifeq ("$(BOARD)","NONE")
+        BOARD=OvK_Shield
+    endif
+    SETTINGS_FILE="settings_ovk_testplatform.h"
+endif
 
 include $(wildcard ./board/$(STAR).mk)
 

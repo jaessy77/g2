@@ -43,6 +43,14 @@ ifeq ("$(BOARD)","shopbotShield")
     DEVICE_DEFINES += SETTINGS_FILE=${SETTINGS_FILE}
 endif
 
+ifeq ("$(BOARD)","OvK_Shield")
+    # This is a due with a OvK shield. We'll use the Due platform, but set defines
+    # for the code to get the pinout right.
+
+    BASE_BOARD = g2core-due
+    DEVICE_DEFINES += MOTATE_BOARD="OvK_Shield"
+    DEVICE_DEFINES += SETTINGS_FILE=${SETTINGS_FILE}
+endif
 
 
 ##########
