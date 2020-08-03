@@ -1584,7 +1584,7 @@
     <UsesExternalMakeFile>True</UsesExternalMakeFile>
     <OutputDirectory />
     <BuildTarget>CONFIG=OvK_Testplatform COLOR=0 VERBOSE=1</BuildTarget>
-    <CleanTarget>clean CONFIG=OvK_Testplatform </CleanTarget>
+    <CleanTarget>clean CONFIG=OvK_Testplatform</CleanTarget>
     <ExternalMakeFilePath>Makefile</ExternalMakeFilePath>
     <OutputPath>bin\OvK_Testplatform\</OutputPath>
   </PropertyGroup>
@@ -1635,6 +1635,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="board\ArduinoDue\motate_pin_assignments.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="board\ArduinoDue\ovk_shield-pinout.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="board\ArduinoDue\shopbotShield-pinout.h">
@@ -1710,36 +1713,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="board\gquintic\motate_pin_assignments.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="board\OvK_Shield\board_stepper.cpp">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="board\OvK_Shield\board_stepper.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="board\OvK_Shield\board_xio.cpp">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="board\OvK_Shield\board_xio.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="board\OvK_Shield\gShield-pinout.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="board\OvK_Shield\hardware.cpp">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="board\OvK_Shield\hardware.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="board\OvK_Shield\motate_pin_assignments.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="board\OvK_Shield\OvK_Shield-pinout.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="board\OvK_Shield\shopbotShield-pinout.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="board\printrboardg2\board_stepper.cpp">
@@ -2032,7 +2005,6 @@
     <Folder Include="board\g2v9" />
     <Folder Include="board\gquintic\" />
     <Folder Include="board\gquadratic" />
-    <Folder Include="board\OvK_Shield" />
     <Folder Include="board\printrboardg2\" />
     <Folder Include="board\sbv300\" />
     <Folder Include="device\" />
@@ -2084,10 +2056,10 @@
     <None Include="board\gquintic.mk">
       <SubType>compile</SubType>
     </None>
-    <None Include="board\OvK_Shield.gdb">
+    <None Include="board\ovk_shield.gdb">
       <SubType>compile</SubType>
     </None>
-    <None Include="board\OvK_Shield.mk">
+    <None Include="board\ovk_shield.mk">
       <SubType>compile</SubType>
     </None>
     <None Include="board\printrboardg2.gdb">

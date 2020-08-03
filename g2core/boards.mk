@@ -160,7 +160,7 @@ endif
 
 ifeq ("$(CONFIG)","OvK_Testplatform")
     ifeq ("$(BOARD)","NONE")
-        BOARD=OvK_Shield
+        BOARD=ovk_shield
     endif
     SETTINGS_FILE="settings_ovk_testplatform.h"
 endif
